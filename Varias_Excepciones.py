@@ -1,20 +1,20 @@
 
-frutas = {0: "Pera", 1: "Manzana", 2: "Limon", 3: "Cereza"}
+frutas = {0: 'Pera', 1: 'Manzana', 2: 'Limon', 3: 'Cereza'}
 
-def Elegir(frutas):
+def elegir(frutas):
 
 	try:		
 		print(frutas)
-		index = int(input("Elige fruta (Pon el numero): "))
-		print(f"Tu fruta favorita es: {frutas[index]}")
+		index = int(input('Elige fruta (Pon el numero): '))
+		print(f'Tu fruta favorita es: {frutas[index]}')
 
 	except IndexError:
-		print("Indice incorrecto")
+		print('Indice incorrecto')
 
 	except ValueError:
-		print("Tienes que poner un numero entero")
+		print('Tienes que poner un numero entero')
 
 	except Exception:
-		print("Ha ocurrido un error")
+		print('Ha ocurrido un error')
 
-Elegir(frutas)
+elegir(frutas)

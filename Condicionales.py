@@ -1,9 +1,6 @@
 
-"""
-Programa que suma
-todos los numeros
-que ingresamos
-"""
+# Programa que suma todos 
+# los numeros que ingresamos
 
 while True:
 
@@ -12,7 +9,7 @@ while True:
 
 		# Numeros
 
-		suma = input("Numeros sepadaros por espacios: ")
+		suma = input('Numeros sepadaros por espacios: ')
 		suma = suma.split()
 
 		"""
@@ -26,17 +23,17 @@ while True:
 				total += float(numero)
 
 			else:
-				raise ValueError("No es un numero")
+				raise ValueError('No es un numero')
 
 	# Excepciones que manejan los errores de ejecucion
 
 	except ValueError:
-		print("Son incorrectos")
-		print("Vuelve a introducir los numeros")
+		print('Son incorrectos')
+		print('Vuelve a introducir los numeros')
 
 	else:		
-		print(f"El valor de la suma: {total}")
+		print(f'El valor de la suma: {total}')
 		break
 
 	finally:
-		print("Ha terminado la iteracion")
+		print('Ha terminado la iteracion')

@@ -1,10 +1,10 @@
 
-def Division(A, B):
+def division(a, b):
 
 	try:
-		print(f"Resultado: {A / B}")
+		print(f'Resultado: {a / b}')
 
 	except ZeroDivisionError:
-		print("No se puede dividir por cero")
+		print('No se puede dividir por cero')
 
-Division(2, 0)
+division(2, 0)

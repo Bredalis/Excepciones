@@ -1,8 +1,8 @@
 
-def division(a, b):
+def division(dividendo, divisor):
 
 	try:
-		print(f'Resultado: {a / b}')
+		print(f'Resultado: {dividendo / divisor}')
 
 	except ZeroDivisionError:
 		print('No se puede dividir por cero')
